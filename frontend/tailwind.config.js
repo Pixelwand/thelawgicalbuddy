@@ -5,7 +5,13 @@ module.exports = {
   ],
   theme: {
     
-    extend: {},
+    extend: {
+      colors:{
+        buttonColor:"#008cff",
+        learningBackground:"#5a6273",
+          },
+    },
+    
   },
   plugins: [],
 }
