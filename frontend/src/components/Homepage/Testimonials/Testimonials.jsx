@@ -3,9 +3,13 @@ import React from 'react'
 export const Testimonials = () => {
   return (
     <>
-    <div>
-      <div className='flex flex-col gap-5 pb-10 pt-5 bg-learningBackground px-3'>
-        
+    <div className="bg-learningBackground text-white pt-3">
+      <div className='text-xl text-center font-bold'>Discover and Connect with Alumni</div>
+      <div className='text-xl text-center font-bold'>Who have walked the same path as you</div>
+      <div className='text-white text-xl text-center font-sans font-bold pt-3'>Create Impact with 100+ Professionals.</div>
+      
+      <div className='flex flex-col gap-5 pb-10 pt-5  px-3'>
+      
 <div class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
     <a href="/">
     <div class="relative w-10 h-10 overflow-hidden bg-gray-100 rounded-full dark:bg-gray-600">
