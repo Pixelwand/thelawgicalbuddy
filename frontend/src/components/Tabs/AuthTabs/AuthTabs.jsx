@@ -1,6 +1,6 @@
-import {Button, useDisclosure, Modal, ModalOverlay, ModalContent, ModalHeader, ModalCloseButton, ModalBody, FormControl, FormLabel, Input, ModalFooter } from '@chakra-ui/react';
+import {Button, useDisclosure, Modal, ModalOverlay, ModalContent, ModalHeader, ModalCloseButton, ModalBody, ModalFooter, Tabs, TabList, TabPanels, TabPanel, Tab } from '@chakra-ui/react';
 import React from 'react';
-import { Login } from '../../Authentication';
+import { Login, Signup } from '../../Authentication';
 export const AuthTabs = () => {
     const { isOpen, onOpen, onClose } = useDisclosure()
   
@@ -9,7 +9,7 @@ export const AuthTabs = () => {
   
     return (
       <>
-        <Button onClick={onOpen} bg="inherit">Login</Button>
+        <Button onClick={onOpen} bg="inherit" ml={32} bgColor="blue.600">Login</Button>
   
         <Modal
           initialFocusRef={initialRef}
@@ -22,7 +22,20 @@ export const AuthTabs = () => {
             <ModalHeader>Create your account</ModalHeader>
             <ModalCloseButton />
             <ModalBody pb={6}>
-              <Login />
+                <Tabs>
+                    <TabList>   
+                        <Tab className='focus:hidden'>Login</Tab>
+                        <Tab className='focus:hidden'>Signup</Tab>
+                    </TabList>
+                    <TabPanels>
+                        <TabPanel>
+                            <Login />
+                        </TabPanel>
+                        <TabPanel>
+                            <Signup />
+                        </TabPanel> 
+                    </TabPanels>
+                </Tabs>
             </ModalBody>
   
             <ModalFooter>
