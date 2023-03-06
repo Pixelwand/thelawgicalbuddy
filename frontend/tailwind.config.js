@@ -4,9 +4,10 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        fonts: ["Climate Crisis", 'cursive'],
+        logo: ["Tilt Neon", 'cursive'],
       },
       colors: {
+        airforce:"#00308F",
         buttonColor: "#008cff",
         learningBackground: "#5a6273",
         // background: linear-gradient(right, #0052d4, #4364f7, #6fb1fc);

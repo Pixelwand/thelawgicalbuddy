@@ -36,7 +36,7 @@ export const Navbar = () => {
                 </Disclosure.Button>
               </div>
               <div className="flex flex-1  sm:items-stretch sm:justify-start">
-                <div className="text-white font-bold text-xl ml-3">
+                <div className="text-white font-bold font-logo text-xl ml-3">
                   Lawgical
                 </div>
                 <div className="text-white">
