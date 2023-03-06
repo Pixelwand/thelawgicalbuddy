@@ -4,7 +4,7 @@ export const Main = () => {
   return (
     <>
       <div>
-        <div>India's best tech learning company</div>
+        <div className='font-fonts'>India's best tech learning company</div>
         <div>Learn industry relevant skills with top veterans</div>
         <div>
           <h2>Book a live class, for Free!</h2>
