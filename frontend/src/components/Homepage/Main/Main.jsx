@@ -28,8 +28,13 @@ export const Main = () => {
               <input type={"number"} placeholder="Phone No." />
             </label>
             <div>Limited seats left</div>
-            <button type='submit'>Submit</button>
+            <button type="submit">Submit</button>
           </form>
+        </div>
+        <div className='text-xl shadow-2xl m-5'>
+          <div>126% Avg. CTC Hike</div>
+          <div>Instructors From Top Companies</div>
+          <div>750+ Employer Partners</div>
         </div>
       </div>
     </>
