@@ -9,8 +9,9 @@ export const AuthTabs = () => {
   
     return (
       <>
-        <Button onClick={onOpen} bg="inherit" ml={32} bgColor="blue.600">Login</Button>
-  
+          <button onClick={onOpen} className="border border-white px-4 rounded-sm font-bold py-1 ml-28 xl:ml-0 lg:text-sm lg:px-8 lg:py-2 hover:bg-white hover:text-blue-600 sm:mr-20">
+            Login
+          </button>
         <Modal
           initialFocusRef={initialRef}
           finalFocusRef={finalRef}
@@ -22,24 +23,24 @@ export const AuthTabs = () => {
             <ModalHeader>Create your account</ModalHeader>
             <ModalCloseButton />
             <ModalBody pb={6}>
-                <Tabs>
-                    <TabList>   
-                        <Tab className='focus:hidden'>Login</Tab>
-                        <Tab className='focus:hidden'>Signup</Tab>
-                    </TabList>
-                    <TabPanels>
-                        <TabPanel>
-                            <Login />
-                        </TabPanel>
-                        <TabPanel>
-                            <Signup />
-                        </TabPanel> 
-                    </TabPanels>
-                </Tabs>
+              <Tabs>
+                <TabList>
+                  <Tab className="focus:hidden">Login</Tab>
+                  <Tab className="focus:hidden">Signup</Tab>
+                </TabList>
+                <TabPanels>
+                  <TabPanel>
+                    <Login />
+                  </TabPanel>
+                  <TabPanel>
+                    <Signup />
+                  </TabPanel>
+                </TabPanels>
+              </Tabs>
             </ModalBody>
-  
+
             <ModalFooter>
-              <Button colorScheme='blue' mr={3}>
+              <Button colorScheme="blue" mr={3}>
                 Save
               </Button>
               <Button onClick={onClose}>Cancel</Button>
@@ -47,5 +48,5 @@ export const AuthTabs = () => {
           </ModalContent>
         </Modal>
       </>
-    )
+    );
   }

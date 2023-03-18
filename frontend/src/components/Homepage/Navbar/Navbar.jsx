@@ -4,9 +4,9 @@ import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline';
 import { AuthTabs } from '../../Tabs';
 
 const navigation = [
-  { name: 'Dashboard', href: '#', current: true },
+  { name: 'Home', href: '#', current: true },
+  { name: 'Courses', href: '#', current: false },
   { name: 'Team', href: '#', current: false },
-  { name: 'Projects', href: '#', current: false },
   { name: 'Calendar', href: '#', current: false },
 ]
 
@@ -26,24 +26,30 @@ export const Navbar = () => {
             <div className="relative flex h-16 items-center justify-between ">
               <div className="absolute inset-y-0 ml-80 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
-                <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2">
                   <span className="sr-only">Open main menu</span>
                   {open ? (
-                    <XMarkIcon className="block h-6 w-6 text-white" aria-hidden="true" />
+                    <XMarkIcon
+                      className="block h-10 w-10 text-white"
+                      aria-hidden="true"
+                    />
                   ) : (
-                    <Bars3Icon className="block h-10 w-10 text-white" aria-hidden="true" />
+                    <Bars3Icon
+                      className="block h-10 w-10 text-white"
+                      aria-hidden="true"
+                    />
                   )}
                 </Disclosure.Button>
               </div>
               <div className="flex flex-1  sm:items-stretch sm:justify-start">
-                <div className="text-white font-bold font-logo text-xl ml-3">
+                <div className="text-white font-bold font-logo text-xl ml-3 lg:text-2xl">
                   Lawgical
                 </div>
-                <div className="text-white">
+                <div className="text-white sm:hidden">
                   <AuthTabs />
                 </div>
-                <div className="hidden sm:ml-6 sm:block text-white">
-                  <div className="flex space-x-4">
+                <div className="hidden sm:ml-6 sm:block text-white lg:flex lg:flex-row lg:ml-80 lg:gap-64">
+                  <div className="flex space-x-4 lg:space-x-12">
                     {navigation.map((item) => (
                       <a
                         key={item.name}
@@ -51,8 +57,8 @@ export const Navbar = () => {
                         className={classNames(
                           item.current
                             ? "bg-white text-blue-600"
-                            : "text-gray-300 hover:bg-blue-200 hover:text-blue-600",
-                          "px-3 py-2 rounded-md text-sm font-medium"
+                            : "text-white hover:bg-blue-200 hover:text-blue-600",
+                          "px-3 py-2 rounded-md text-sm font-bold"
                         )}
                         aria-current={item.current ? "page" : undefined}
                       >
@@ -60,10 +66,12 @@ export const Navbar = () => {
                       </a>
                     ))}
                   </div>
+                  <div className="text-white lg:space-x-72 lg:ml-20 lg:relative">
+                    <AuthTabs />
+                  </div>
                 </div>
               </div>
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-                {/* Profile dropdown */}
               </div>
             </div>
           </div>

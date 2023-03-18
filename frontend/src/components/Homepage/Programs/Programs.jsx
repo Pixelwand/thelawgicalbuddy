@@ -7,10 +7,10 @@ export const Programs = () => {
   return (
     <>
       <div>
-        <div className="text-center text-2xl my-6 leading-10">
+        <div className="text-center text-2xl my-6 leading-10 ">
           <b>Programs</b> we offer
         </div>
-        <div className="flex flex-col gap-10 text-center">
+        <div className="flex flex-col lg:flex-row  lg:justify-center gap-10 text-center">
           <div className="shadow-2xl m-5 border-solid border rounded-2xl">
             <div>
               <div className="bg-gradient-to-r from-liberty via-intel to-blue-400 text-2xl text-white rounded-t-2xl py-8 flex flex-row gap-20 justify-center">
