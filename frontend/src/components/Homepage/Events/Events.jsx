@@ -1,19 +1,26 @@
 import React from 'react';
 import { event } from '../../Assets/index';
- import {ArrowRightIcon} from '@heroicons/react/20/solid';
+import { ArrowRightIcon } from '@heroicons/react/20/solid';
+import { motion } from 'framer-motion';
 
 export const Events = () => {
   return (
     <>
     <div className='bg-learningBackground mb-10 text-white pb-10 pt-5'>
-      <div className='text-center font-sans text-xl mb-5'>
+      <div className='text-center font-sans text-xl mb-10'>
       <div>Upskill with The Lawgical Buddy</div>
     <div>Learn from the best in the industry</div>
     <div>Get access to the best resources</div>
       </div>
     
     <div className='flex flex-col lg:flex-row lg:justify-center lg:gap-10 gap-6 px-4'>
-    <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                  <motion.div
+                       transition={{
+              duration: 0.8,
+            }}
+            whileHover={{ scale: 1.1, duration: 6 }}
+            whileTap={{ scale: 0.9, duration: 2 }}
+                      class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
     <a href="/">
         <img class="rounded-t-lg" src={event} alt="" />
     </a>
@@ -26,8 +33,14 @@ export const Events = () => {
         Register Now <ArrowRightIcon className='h-5 w-5 ml-2 -mr-1'/>
         </a>
     </div>
-</div>
-<div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+</motion.div>
+                  <motion.div
+                       transition={{
+              duration: 0.8,
+            }}
+            whileHover={{ scale: 1.1, duration: 6 }}
+            whileTap={{ scale: 0.9, duration: 2 }}
+                      class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
     <a href="/">
         <img class="rounded-t-lg" src={event} alt="" />
     </a>
@@ -40,8 +53,14 @@ export const Events = () => {
         Register Now <ArrowRightIcon className='h-5 w-5 ml-2 -mr-1'/>
         </a>
     </div>
-</div>
-<div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+</motion.div>
+                  <motion.div
+                       transition={{
+              duration: 0.8,
+            }}
+            whileHover={{ scale: 1.1, duration: 6 }}
+            whileTap={{ scale: 0.9, duration: 2 }}
+                      class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
     <a href="/">
         <img class="rounded-t-lg" src={event} alt="" />
     </a>
@@ -55,7 +74,7 @@ export const Events = () => {
             
         </a>
     </div>
-</div>
+</motion.div>
     </div>
 
     </div>
