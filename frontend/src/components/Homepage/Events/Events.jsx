@@ -12,7 +12,7 @@ export const Events = () => {
     <div>Get access to the best resources</div>
       </div>
     
-    <div className='flex flex-col gap-6 px-4'>
+    <div className='flex flex-col lg:flex-row lg:justify-center lg:gap-10 gap-6 px-4'>
     <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
     <a href="/">
         <img class="rounded-t-lg" src={event} alt="" />
