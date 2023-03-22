@@ -6,6 +6,7 @@ import { Main } from "./Main/Main";
 import { Navbar } from "./Navbar/Navbar";
 import { Programs } from "./Programs/Programs";
 import { Testimonials } from "./Testimonials/Testimonials";
+import { FreeCourses } from "./Courses/FreeCourses";
 
 
 export {
@@ -15,6 +16,7 @@ export {
     Career,
     Testimonials,
     Events,
+    FreeCourses,
     Learning,
     Footer
 }

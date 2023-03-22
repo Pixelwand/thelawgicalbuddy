@@ -1,5 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Open+Sans:wght@300&family=Tilt+Neon&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Open+Sans:wght@300&family=Tilt+Neon&display=swap');
+
+@layer base {
+.h0 {
+    @apply text-3xl font-bold md:text-5xl;
+  }
+
+  .h1,
+  h1 {
+    @apply text-2xl font-bold md:text-4xl;
+  }
+  .h2,
+  h2 {
+    @apply text-xl font-bold md:text-3xl;
+  }
+  .h3,
+  h3 {
+    @apply text-lg font-bold md:text-2xl;
+  }
+
+  .h4,
+  h4 {
+    @apply text-base font-bold md:text-lg;
+  }
+
+  .btn{
+    @apply 
+  }
+}

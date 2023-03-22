@@ -19,7 +19,7 @@ module.exports = {
         madrid: "#FEBE10",
         gold: "#FEBE10",
         astros: "#002D62",
-        chelesa:"#034694",
+        chelesa: "#034694",
         persian: "#1C39BB",
         airforce: "#00308F",
         buttonColor: "#008cff",
