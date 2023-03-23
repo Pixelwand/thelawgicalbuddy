@@ -5,9 +5,9 @@ import { AuthTabs } from '../../Tabs';
 
 const navigation = [
   { name: 'Home', href: '#', current: true },
-  { name: 'Courses', href: '#', current: false },
-  { name: 'Team', href: '#', current: false },
-  { name: 'Calendar', href: '#', current: false },
+  { name: 'Courses', href: '/topics', current: false },
+  { name: 'Team', href: '/team', current: false },
+  { name: 'FAQs', href: '/faqs', current: false },
 ]
 
 function classNames(...classes) {
