@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 export const Events = () => {
   return (
     <>
-    <div className='bg-learningBackground mb-10 text-white pb-10 pt-5'>
+    <div className=' mb-10 text-white pb-10 pt-5'>
       <div className='text-center font-sans text-xl mb-10'>
       <div>Upskill with The Lawgical Buddy</div>
     <div>Learn from the best in the industry</div>

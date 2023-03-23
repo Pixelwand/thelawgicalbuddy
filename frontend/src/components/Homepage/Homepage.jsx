@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navbar, Main, Programs, Career, Testimonials, Testimonial, Steps, Events, FreeCourses, Learning, Footer } from './index';
+import { Navbar, Main, Programs, Career, Testimonials, Testimonial, Steps, Us, Events, FreeCourses, Learning, Story, Footer } from './index';
 
 
 export const Homepage = () => {
@@ -9,12 +9,14 @@ export const Homepage = () => {
         <Main />
       <Programs />
       <Steps />
+      <Us />
         <Career />
       <Testimonials />
       <Testimonial />
       <Events />
       <FreeCourses />
-        <Learning />
+      <Learning />
+      <Story />
         <Footer />
     </>
   )
