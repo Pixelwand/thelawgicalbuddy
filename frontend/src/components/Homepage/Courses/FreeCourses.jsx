@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Featuredone, Featuredtwo, Featuredfourth, Featuredthree } from "../../Assets/index";
 
 export const FreeCourses = () => {
   return (
@@ -19,7 +20,7 @@ export const FreeCourses = () => {
             <div className="overflow-hidden aspect-w-1 aspect-h-1">
               <img
                 className="object-cover w-full h-full transition-all duration-300 group-hover:scale-125"
-                src="https://cdn.rareblocks.xyz/collection/clarity-ecommerce/images/item-cards/4/product-1.png"
+                src={Featuredone}
                 alt=""
               />
             </div>
@@ -32,7 +33,7 @@ export const FreeCourses = () => {
               <div>
                 <h3 className="text-xs font-bold text-gray-900 sm:text-sm md:text-base">
                   <a href="#" title="">
-                    Beoplay M5 Bluetooth Speaker
+                    Top First Course
                     <span
                       className="absolute inset-0"
                       aria-hidden="true"
@@ -95,7 +96,7 @@ export const FreeCourses = () => {
             <div className="overflow-hidden aspect-w-1 aspect-h-1">
               <img
                 className="object-cover w-full h-full transition-all duration-300 group-hover:scale-125"
-                src="https://cdn.rareblocks.xyz/collection/clarity-ecommerce/images/item-cards/4/product-2.png"
+                src={Featuredtwo}
                 alt=""
               />
             </div>
@@ -103,7 +104,7 @@ export const FreeCourses = () => {
               <div>
                 <h3 className="text-xs font-bold text-gray-900 sm:text-sm md:text-base">
                   <a href="#" title="">
-                    Apple Smart Watch 6 - Special Edition
+                    Top Second Course
                     <span
                       className="absolute inset-0"
                       aria-hidden="true"
@@ -166,7 +167,7 @@ export const FreeCourses = () => {
             <div className="overflow-hidden aspect-w-1 aspect-h-1">
               <img
                 className="object-cover w-full h-full transition-all duration-300 group-hover:scale-125"
-                src="https://cdn.rareblocks.xyz/collection/clarity-ecommerce/images/item-cards/4/product-3.png"
+                src={Featuredthree}
                 alt=""
               />
             </div>
@@ -179,7 +180,7 @@ export const FreeCourses = () => {
               <div>
                 <h3 className="text-xs font-bold text-gray-900 sm:text-sm md:text-base">
                   <a href="#" title="">
-                    Beylob 90 Speaker
+                    Top Third Course
                     <span
                       className="absolute inset-0"
                       aria-hidden="true"
@@ -246,7 +247,7 @@ export const FreeCourses = () => {
             <div className="overflow-hidden aspect-w-1 aspect-h-1">
               <img
                 className="object-cover w-full h-full transition-all duration-300 group-hover:scale-125"
-                src="https://cdn.rareblocks.xyz/collection/clarity-ecommerce/images/item-cards/4/product-4.png"
+                src={Featuredfourth}
                 alt=""
               />
             </div>
@@ -254,7 +255,7 @@ export const FreeCourses = () => {
               <div>
                 <h3 className="text-xs font-bold text-gray-900 sm:text-sm md:text-base">
                   <a href="#" title="">
-                    Martino 75 Bluetooth
+                    Top Fourth Course
                     <span
                       className="absolute inset-0"
                       aria-hidden="true"
