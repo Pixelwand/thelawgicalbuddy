@@ -1,156 +1,153 @@
-import React from 'react';
+import { useForm } from "react-hook-form";
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
-export const Signup = ({ modal, setModal }) => {
-  const closeModal = () => {
-    setModal(false)
-  }
+export const Signup = () => {
+  const navigate = useNavigate();
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
+  const formSubmit = async (data) => {
+    const response = await fetch(
+      "",
+      {
+        method: "POST",
+        headers: {
+          "content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      }
+    )
+      .then((res) => {
+        console.log("User Created Successfully", data);
+      })
+      .then(navigate("/dashboard"));
+
+    return () => {
+      response.json();
+    };
+  };
+
+  const [value, setValue] = useState("");
+
+  const changeHandler = () => {
+    setValue(value);
+  };
+
   return (
     <>
-      <section class="relative">
-        <div class="absolute inset-0 bg-gray-900/20"></div>
+      <div class="px-4 pb-2">
+        <form onSubmit={handleSubmit(formSubmit)}>
+          <fieldset class="text-center font-semibold text-base mb-8 font-sans">
+            Sign up with your email
+            <hr class="mt-3 font-" />
+          </fieldset>
 
-        <div class="relative max-w-lg px-4 mx-auto sm:px-0">
-          <div class="overflow-hidden bg-white rounded-md shadow-md">
-            <button onClick={closeModal}>x</button>
-            <div class="px-4 py-6 sm:px-8 sm:py-7">
-              <div class="text-center">
-                <h2 class="text-3xl font-bold text-gray-900">
-                  Create an account
-                </h2>
-                <p class="mt-2 text-base text-gray-600">
-                  Already joined?{" "}
-                  <a
-                    href="#"
-                    title=""
-                    class="text-blue-600 transition-all duration-200 hover:underline hover:text-blue-700"
-                  >
-                    Sign in now
-                  </a>
-                </p>
-              </div>
-
-              <form action="#" method="POST" class="mt-8">
-                <div class="space-y-5">
-                  <div>
-                    <label for="" class="text-base font-medium text-gray-900">
-                      {" "}
-                      First & Last name{" "}
-                    </label>
-                    <div class="mt-2.5">
-                      <input
-                        type="text"
-                        name=""
-                        id=""
-                        placeholder="Enter your full name"
-                        class="block w-full p-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:border-blue-600 caret-blue-600"
-                      />
-                    </div>
-                  </div>
-
-                  <div>
-                    <label for="" class="text-base font-medium text-gray-900">
-                      {" "}
-                      Email address{" "}
-                    </label>
-                    <div class="mt-2.5">
-                      <input
-                        type="email"
-                        name=""
-                        id=""
-                        placeholder="Enter email to get started"
-                        class="block w-full p-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:border-blue-600 caret-blue-600"
-                      />
-                    </div>
-                  </div>
-
-                  <div>
-                    <label for="" class="text-base font-medium text-gray-900">
-                      {" "}
-                      Password{" "}
-                    </label>
-                    <div class="mt-2.5">
-                      <input
-                        type="password"
-                        name=""
-                        id=""
-                        placeholder="Enter your password"
-                        class="block w-full p-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:border-blue-600 caret-blue-600"
-                      />
-                    </div>
-                  </div>
-
-                  <div>
-                    <button
-                      type="submit"
-                      class="inline-flex items-center justify-center w-full px-4 py-4 text-base font-semibold text-white transition-all duration-200 bg-blue-600 border border-transparent rounded-md focus:outline-none hover:bg-blue-700 focus:bg-blue-700"
-                    >
-                      Sign up
-                    </button>
-                  </div>
-
-                  <div>
-                    <button
-                      type="button"
-                      class="
-                                    relative
-                                    inline-flex
-                                    items-center
-                                    justify-center
-                                    w-full
-                                    px-4
-                                    py-4
-                                    text-base
-                                    font-semibold
-                                    text-gray-700
-                                    transition-all
-                                    duration-200
-                                    bg-white
-                                    border-2 border-gray-200
-                                    rounded-md
-                                    hover:bg-gray-100
-                                    focus:bg-gray-100
-                                    hover:text-black
-                                    focus:text-black focus:outline-none
-                                "
-                    >
-                      <div class="absolute inset-y-0 left-0 p-4">
-                        <svg
-                          class="w-6 h-6 text-blue-600"
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 24 24"
-                          fill="currentColor"
-                        >
-                          <path d="M20.283 10.356h-8.327v3.451h4.792c-.446 2.193-2.313 3.453-4.792 3.453a5.27 5.27 0 0 1-5.279-5.28 5.27 5.27 0 0 1 5.279-5.279c1.259 0 2.397.447 3.29 1.178l2.6-2.599c-1.584-1.381-3.615-2.233-5.89-2.233a8.908 8.908 0 0 0-8.934 8.934 8.907 8.907 0 0 0 8.934 8.934c4.467 0 8.529-3.249 8.529-8.934 0-.528-.081-1.097-.202-1.625z"></path>
-                        </svg>
-                      </div>
-                      Sign up with Google
-                    </button>
-                  </div>
-                </div>
-              </form>
-
-              <p class="max-w-xs mx-auto mt-5 text-sm text-center text-gray-600">
-                This site is protected by reCAPTCHA and the Google{" "}
-                <a
-                  href="#"
-                  title=""
-                  class="text-blue-600 transition-all duration-200 hover:underline hover:text-blue-700"
-                >
-                  Privacy Policy
-                </a>{" "}
-                &
-                <a
-                  href="#"
-                  title=""
-                  class="text-blue-600 transition-all duration-200 hover:underline hover:text-blue-700"
-                >
-                  Terms of Service
-                </a>
+          <div class="mb-8 font-xl">
+            <label>
+              <input
+                onChange={changeHandler}
+                name="name"
+                type={"text"}
+                class="outline outline-2 outline-offset-1 focus:outline-4 outline-blue-400 placeholder:text-black placeholder:text-base rounded-lg w-72 h-10 pl-5 placeholder:font-sans"
+                placeholder="Enter Your Name"
+                {...register("name", { required: true })}
+              />
+            </label>
+            {errors.name && (
+              <p class="text-red-600 font-normal">
+                please check your Full Name!
               </p>
-            </div>
+            )}
           </div>
-        </div>
-      </section>
+
+          <div class="mb-8">
+            <label>
+              <input
+                onChange={changeHandler}
+                name="email"
+                class="w-72  h-10 pl-5 outline outline-2 outline-offset-1 focus:outline-4 outline-blue-400 placeholder:text-black rounded-lg"
+                type={"email"}
+                placeholder="Email"
+                {...register("email", {
+                  required: true,
+                  pattern:
+                    /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
+                })}
+              />
+            </label>
+            {errors.email && (
+              <p class="text-red-600 font-normal">Please check your Email!</p>
+            )}
+          </div>
+          <div class="mb-8 ">
+            <label>
+              <input
+                name="number"
+                onChange={changeHandler}
+                class="w-72  h-10 pl-5 outline outline-2 outline-offset-1 outline-blue-400 placeholder:text-black focus:outline-4 rounded-lg"
+                placeholder="Phone Number"
+                {...register("number", {
+                  required: true,
+                  minLength: 10,
+                  maxLength: 10,
+                })}
+              ></input>
+            </label>
+            {errors.number && (
+              <p class="text-red-600 font-normal">
+                Please check your phone number!
+              </p>
+            )}
+          </div>
+          <div class="mb-5">
+            <label>
+              <input
+                name="password"
+                onChange={changeHandler}
+                class="w-72 focus:outline-4  h-10 pl-5 outline outline-2 outline-offset-1 outline-blue-400 placeholder:text-black rounded-lg"
+                type={"password"}
+                placeholder="Create New Password"
+                {...register("password", {
+                  required: true,
+                  pattern: /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,15}$/,
+                })}
+              />
+            </label>
+            {errors.password && (
+              <p class="text-red-600 font-normal">
+                Please check your password!
+              </p>
+            )}
+          </div>
+          <div class="mb-5">
+            <input
+              type={"checkbox"}
+              {...register("checkbox", { required: true })}
+            />
+            <label class="font-sans text-sm ml-5">
+              I agree to the{" "}
+              <a href="#/" class="text-blue-700 font-semibold">
+                Terms of Service
+              </a>{" "}
+              and{" "}
+              <a href="#/" class="font-semibold font-sans text-blue-700">
+                Privacy Policy
+              </a>
+            </label>
+          </div>
+          <div class="text-center">
+            <button
+              class="bg-blue-600 hover:bg-blue-800 text-white font-semibold text-xl rounded-3xl w-5/6 px-6 py-3"
+              type="submit"
+            >
+              Create account
+            </button>
+          </div>
+        </form>
+      </div>
     </>
   );
-}
+};
