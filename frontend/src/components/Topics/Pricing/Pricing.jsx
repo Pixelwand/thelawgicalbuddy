@@ -43,7 +43,7 @@ export const Pricing = () => {
 
                 <tbody>
                     <tr>
-                        <td className="py-4 pr-4 font-medium border-b border-gray-200">Website number</td>
+                        <td className="py-4 pr-4 font-medium border-b border-gray-200">Courses</td>
 
                         <td className="px-4 py-4 text-center border-b border-gray-200">01</td>
 
@@ -55,19 +55,19 @@ export const Pricing = () => {
                     </tr>
 
                     <tr>
-                        <td className="py-4 pr-4 font-medium border-b border-gray-200">Server storage</td>
+                        <td className="py-4 pr-4 font-medium border-b border-gray-200">Courses</td>
 
-                        <td className="px-4 py-4 text-center border-b border-gray-200">100 GB</td>
+                        <td className="px-4 py-4 text-center border-b border-gray-200">100 </td>
 
-                        <td className="px-4 py-4 text-center border-b border-gray-200">500 GB</td>
+                        <td className="px-4 py-4 text-center border-b border-gray-200">500 </td>
 
-                        <td className="px-4 py-4 text-center text-white bg-gray-900 border-b border-white/20">1 TB</td>
+                        <td className="px-4 py-4 text-center text-white bg-gray-900 border-b border-white/20">1</td>
 
                         <td className="px-4 py-4 text-center border-b border-gray-200">Unlimited</td>
                     </tr>
 
                     <tr>
-                        <td className="py-4 pr-4 font-medium border-b border-gray-200">Database</td>
+                        <td className="py-4 pr-4 font-medium border-b border-gray-200">Courses</td>
 
                         <td className="px-4 py-4 text-center border-b border-gray-200">-</td>
 
@@ -79,7 +79,7 @@ export const Pricing = () => {
                     </tr>
 
                     <tr>
-                        <td className="py-4 pr-4 font-medium border-b border-gray-200">Unmetered Bandwidth</td>
+                        <td className="py-4 pr-4 font-medium border-b border-gray-200">Courses</td>
 
                         <td className="px-4 py-4 text-center border-b border-gray-200">-</td>
 
@@ -103,7 +103,7 @@ export const Pricing = () => {
                     </tr>
 
                     <tr>
-                        <td className="py-4 pr-4 font-medium border-b border-gray-200">SSD Disk</td>
+                        <td className="py-4 pr-4 font-medium border-b border-gray-200">Courses</td>
 
                         <td className="px-4 py-4 text-center border-b border-gray-200">-</td>
 
@@ -123,7 +123,7 @@ export const Pricing = () => {
                     </tr>
 
                     <tr>
-                        <td className="py-4 pr-4 font-medium border-b border-gray-200">VCPUS Fontworld</td>
+                        <td className="py-4 pr-4 font-medium border-b border-gray-200">Courses</td>
 
                         <td className="px-4 py-4 text-center border-b border-gray-200">-</td>
 
@@ -143,7 +143,7 @@ export const Pricing = () => {
                     </tr>
 
                     <tr>
-                        <td className="py-4 pr-4 font-medium border-b border-gray-200">WordPress install</td>
+                        <td className="py-4 pr-4 font-medium border-b border-gray-200">Courses</td>
 
                         <td className="px-4 py-4 text-center border-b border-gray-200">-</td>
 
@@ -163,7 +163,7 @@ export const Pricing = () => {
                     </tr>
 
                     <tr>
-                        <td className="py-4 pr-4 font-medium border-b border-gray-200">Server speed</td>
+                        <td className="py-4 pr-4 font-medium border-b border-gray-200">Courses</td>
 
                         <td className="px-4 py-4 text-center border-b border-gray-200">-</td>
 
@@ -272,9 +272,9 @@ export const Pricing = () => {
         </div>
 
         <div className="grid grid-cols-4 text-center divide-x divide-gray-200">
-            <div className="px-2 py-2">100 GB</div>
+            <div className="px-2 py-2">100 </div>
 
-            <div className="px-2 py-2">500 GB</div>
+            <div className="px-2 py-2">500 </div>
 
             <div className="px-2 py-2">1 TB</div>
 

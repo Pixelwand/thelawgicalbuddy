@@ -1,4 +1,5 @@
 import React from "react";
+import { Featuredone, Featuredtwo, Featuredthree } from "../../Assets/index";
 
 export const Webinars = () => {
   return (
@@ -10,15 +11,15 @@ export const Webinars = () => {
               <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
                 <img
                   class="lg:h-48 md:h-36 w-full object-cover object-center"
-                  src="https://dummyimage.com/720x400"
-                  alt="blog"
+                  src={Featuredone}
+                  alt="webinar"
                 />
                 <div class="p-6">
                   <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
                     CATEGORY
                   </h2>
                   <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
-                    The Catalyzer
+                    The Legal
                   </h1>
                   <p class="leading-relaxed mb-3">
                     Photo booth fam kinfolk cold-pressed sriracha leggings
@@ -77,15 +78,15 @@ export const Webinars = () => {
               <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
                 <img
                   class="lg:h-48 md:h-36 w-full object-cover object-center"
-                  src="https://dummyimage.com/721x401"
-                  alt="blog"
+                  src={Featuredthree}
+                  alt="webinar"
                 />
                 <div class="p-6">
                   <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
                     CATEGORY
                   </h2>
                   <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
-                    The 400 Blows
+                    The Legal
                   </h1>
                   <p class="leading-relaxed mb-3">
                     Photo booth fam kinfolk cold-pressed sriracha leggings
@@ -144,15 +145,15 @@ export const Webinars = () => {
               <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
                 <img
                   class="lg:h-48 md:h-36 w-full object-cover object-center"
-                  src="https://dummyimage.com/722x402"
-                  alt="blog"
+                  src={Featuredtwo}
+                  alt="webinar"
                 />
                 <div class="p-6">
                   <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
                     CATEGORY
                   </h2>
                   <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
-                    Shooting Stars
+                    The Legal
                   </h1>
                   <p class="leading-relaxed mb-3">
                     Photo booth fam kinfolk cold-pressed sriracha leggings

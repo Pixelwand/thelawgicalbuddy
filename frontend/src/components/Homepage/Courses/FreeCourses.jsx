@@ -173,7 +173,7 @@ export const FreeCourses = () => {
             </div>
             <div className="absolute left-3 top-3">
               <p className="sm:px-3 sm:py-1.5 px-1.5 py-1 text-[8px] sm:text-xs font-bold tracking-wide text-white uppercase bg-gray-900 rounded-full">
-                Sale
+                New
               </p>
             </div>
             <div className="flex items-start justify-between mt-4 space-x-4">
