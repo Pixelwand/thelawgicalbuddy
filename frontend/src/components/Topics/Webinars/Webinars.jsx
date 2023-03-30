@@ -1,5 +1,5 @@
-import React from "react";
-import { Featuredone, Featuredtwo, Featuredthree } from "../../Assets/index";
+import React from 'react';
+import { Featuredone, Featuredtwo, Featuredthree } from '../../Assets/index';
 
 export const Webinars = () => {
   return (

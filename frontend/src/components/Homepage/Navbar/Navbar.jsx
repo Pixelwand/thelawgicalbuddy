@@ -1,6 +1,6 @@
-import { Fragment } from 'react'
-import { Disclosure, Menu, Transition } from '@headlessui/react'
-import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline';
+import { Fragment } from 'react';
+import { Disclosure} from '@headlessui/react';
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import { AuthTabs } from '../../Tabs';
 
 const navigation = [
@@ -8,10 +8,10 @@ const navigation = [
   { name: 'Courses', href: '/topics', current: false },
   { name: 'Team', href: '/team', current: false },
   { name: 'FAQs', href: '/faqs', current: false },
-]
+];
 
 function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
+  return classes.filter(Boolean).join(' ');
 }
 
 export const Navbar = () => {
@@ -43,7 +43,7 @@ export const Navbar = () => {
               </div>
               <div className="flex flex-1  sm:items-stretch sm:justify-start">
                 <div className="text-white font-bold font-logo text-xl ml-3 lg:text-2xl">
-                  Lawgical
+                  BICS
                 </div>
                 <div className="text-white sm:hidden">
                   <AuthTabs />
@@ -56,11 +56,11 @@ export const Navbar = () => {
                         href={item.href}
                         className={classNames(
                           item.current
-                            ? "bg-white text-blue-600"
-                            : "text-white hover:bg-blue-200 hover:text-blue-600",
-                          "px-3 py-2 rounded-md text-sm font-bold"
+                            ? 'bg-white text-blue-600'
+                            : 'text-white hover:bg-blue-200 hover:text-blue-600',
+                          'px-3 py-2 rounded-md text-sm font-bold'
                         )}
-                        aria-current={item.current ? "page" : undefined}
+                        aria-current={item.current ? 'page' : undefined}
                       >
                         {item.name}
                       </a>
@@ -71,8 +71,7 @@ export const Navbar = () => {
                   </div>
                 </div>
               </div>
-              <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-              </div>
+              <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0"></div>
             </div>
           </div>
 
@@ -85,11 +84,11 @@ export const Navbar = () => {
                   href={item.href}
                   className={classNames(
                     item.current
-                      ? "bg-white text-blue-600"
-                      : "text-white hover:bg-gray-700 hover:text-white",
-                    "block px-3 py-2 rounded-md text-base font-medium"
+                      ? 'bg-white text-blue-600'
+                      : 'text-white hover:bg-gray-700 hover:text-white',
+                    'block px-3 py-2 rounded-md text-base font-medium'
                   )}
-                  aria-current={item.current ? "page" : undefined}
+                  aria-current={item.current ? 'page' : undefined}
                 >
                   {item.name}
                 </Disclosure.Button>
@@ -100,5 +99,4 @@ export const Navbar = () => {
       )}
     </Disclosure>
   );
-}
-
+};

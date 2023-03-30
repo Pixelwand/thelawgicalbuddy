@@ -1,5 +1,3 @@
-import { AuthTabs } from "./AuthTabs/AuthTabs";
+import { AuthTabs } from './AuthTabs/AuthTabs';
 
-export {
-    AuthTabs
-}
+export { AuthTabs };

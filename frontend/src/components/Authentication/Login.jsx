@@ -1,43 +1,27 @@
-import React, { useState } from "react";
-import { useForm } from "react-hook-form";
-import PropTypes from "prop-types";
-import { useNavigate } from "react-router-dom";
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { login } from '../../appwrite';
 
-export const Login = ({ setToken }) =>{
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm();
+export const Login = () => {
   const navigate = useNavigate();
-  // const [authenticated, setAuthenticated] = useState(localStorage.getItem("authenticated") || false);
 
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
 
-  // const credentials = {email, password}
-
-  async function loginUser(credentials) {
-    console.log(credentials);
-    return fetch("", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(credentials),
-    })
-      .then((data) => data.json())
-      .then(navigate("/dashboard"));
-  }
+  
 
   const formSubmit = async (e) => {
     e.preventDefault();
-    const token = await loginUser({
-      email,
-      password,
-    });
-    console.log(token);
-    setToken(token);
+    if (!email) {
+      alert("Please enter your email");
+      return;
+    }
+    if (!password) {
+      alert("Please enter your password");
+      return;
+    }
+    login(email, password).then((account) => { alert(`successfully logged in`) })
+    .finally(()=>navigate("/dashboard"))
   };
 
   return (
@@ -53,12 +37,10 @@ export const Login = ({ setToken }) =>{
                 onChange={(e) => setEmail(e.target.value)}
                 name="email"
                 class="outline outline-2 outline-offset-1 outline-blue-400 focus:outline-4 placeholder:text-black rounded-lg w-72 h-10 pl-5 placeholder:font-sans"
-                type={"email"}
+                type={'email'}
                 placeholder="Email"
-                // {...register("email",{required:true})}
               />
             </label>
-            {/* {errors.email && <p>Please user correct email</p>} */}
           </div>
           <div class="mb-8">
             <label>
@@ -66,12 +48,10 @@ export const Login = ({ setToken }) =>{
                 onChange={(e) => setPassword(e.target.value)}
                 name="password"
                 class="outline outline-2 outline-offset-1 outline-blue-400 focus:outline-4 placeholder:text-black rounded-lg w-72 h-10 pl-5 placeholder:font-sans"
-                type={"password"}
+                type={'password'}
                 placeholder="Enter Your Password"
-                // {...register("password", {required:true})}
               />
             </label>
-            {/* {errors.password && <p>Please use correct password!</p>} */}
           </div>
           <div class="text-center">
             <button
@@ -85,8 +65,4 @@ export const Login = ({ setToken }) =>{
       </div>
     </>
   );
-}
-
-Login.propTypes = {
-  setToken: PropTypes.func.isRequired,
 };

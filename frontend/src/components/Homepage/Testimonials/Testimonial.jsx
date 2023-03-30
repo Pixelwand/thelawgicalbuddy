@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 export const Testimonial = () => {
   return (
@@ -20,8 +20,8 @@ export const Testimonial = () => {
               title=""
               className="pb-2 text-base font-bold leading-7 text-gray-900 transition-all duration-200 border-b-2 border-gray-900 hover:border-gray-600 font-pj focus:outline-none focus:ring-1 focus:ring-gray-900 focus:ring-offset-2 hover:text-gray-600"
             >
-              {" "}
-              Check all 2,157 reviews{" "}
+              {' '}
+              Check all 2,157 reviews{' '}
             </a>
           </div>
 

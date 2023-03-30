@@ -1,18 +1,18 @@
-import React, { useState } from "react";
-import Modal from "react-modal";
-import { Login, Signup } from "../../Authentication/index";
-import { Tab } from "@headlessui/react";
-import { Button } from "@chakra-ui/react";
-import { XMarkIcon } from "@heroicons/react/24/outline";
+import React, { useState } from 'react';
+import Modal from 'react-modal';
+import { Login, Signup } from '../../Authentication/index';
+import { Tab } from '@headlessui/react';
+import { Button } from '@chakra-ui/react';
+import { XMarkIcon } from '@heroicons/react/24/outline';
 
 const customStyles = {
   content: {
-    top: "50%",
-    left: "50%",
-    right: "auto",
-    bottom: "auto",
-    marginRight: "-50%",
-    transform: "translate(-50%, -50%)",
+    top: '50%',
+    left: '50%',
+    right: 'auto',
+    bottom: 'auto',
+    marginRight: '-50%',
+    transform: 'translate(-50%, -50%)',
   },
 };
 

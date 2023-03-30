@@ -1,11 +1,11 @@
 import React from 'react';
-import {event} from '../../Assets/index';
+import { event } from '../../Assets/index';
 
 export const Career = () => {
   return (
     <>
-      <div className='mb-48'>
-        <div className='text-black px-10 text-center my-5 text-xl p-2 font-sans mb-10'>
+      <div className="mb-48">
+        <div className="text-black px-10 text-center my-5 text-xl p-2 font-sans mb-10">
           <strong>The Lawgical Buddy Recipe to</strong> Transform your career
         </div>
         <div className="flex flex-col gap-40 lg:flex-row px-3 lg:gap-14 justify-center">
@@ -37,7 +37,7 @@ export const Career = () => {
             <p class="mb-3 font-normal text-gray-500 text-sm text-center px-5 my-5 dark:text-gray-400">
               Get senior industry experts as mentors to guide you with mock
               interviews, career advice, resume review, etc.
-            </p> 
+            </p>
             <div className="bg-white shadow-2xl p-4 rounded-2xl absolute mt-2 mx-auto mr-10 lg:w-80">
               <img
                 src={event}
@@ -62,7 +62,7 @@ export const Career = () => {
               <img
                 src={event}
                 alt="Structured Program"
-                className="rounded-2xl" 
+                className="rounded-2xl"
               />
             </div>
           </div>
@@ -70,4 +70,4 @@ export const Career = () => {
       </div>
     </>
   );
-}
+};

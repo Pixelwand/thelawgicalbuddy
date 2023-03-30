@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 export const Story = () => {
   return (
     <section className="py-10 bg-gray-100 sm:py-16 lg:py-24">
@@ -17,8 +17,8 @@ export const Story = () => {
           <div>
             <h3 className="font-bold text-7xl">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-600 to-blue-600">
-                {" "}
-                6+{" "}
+                {' '}
+                6+{' '}
               </span>
             </h3>
             <p className="mt-4 text-xl font-medium text-gray-900">
@@ -32,8 +32,8 @@ export const Story = () => {
           <div>
             <h3 className="font-bold text-7xl">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-600 to-blue-600">
-                {" "}
-                4821{" "}
+                {' '}
+                4821{' '}
               </span>
             </h3>
             <p className="mt-4 text-xl font-medium text-gray-900">
@@ -45,8 +45,8 @@ export const Story = () => {
           <div>
             <h3 className="font-bold text-7xl">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-600 to-blue-600">
-                {" "}
-                37+{" "}
+                {' '}
+                37+{' '}
               </span>
             </h3>
             <p className="mt-4 text-xl font-medium text-gray-900">

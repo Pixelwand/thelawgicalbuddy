@@ -1,27 +1,27 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
 export const Faqs = () => {
   const [faq, setFaq] = useState([
     {
-      question: "How to create an account?",
+      question: 'How to create an account?',
       answer:
         'Amet minim mollit non deserunt ullamco est sit <a href="#" title="" class="text-blue-600 transition-all duration-200 hover:underline">aliqua dolor</a> do amet sint. Velit officia consequat duis enim velit mollit.',
       open: false,
     },
     {
-      question: "How can I make payment using Paypal?",
+      question: 'How can I make payment using Paypal?',
       answer:
         'Amet minim mollit non deserunt ullamco est sit <a href="#" title="" class="text-blue-600 transition-all duration-200 hover:underline">aliqua dolor</a> do amet sint. Velit officia consequat duis enim velit mollit.',
       open: false,
     },
     {
-      question: "Can I cancel my plan?",
+      question: 'Can I cancel my plan?',
       answer:
         'Amet minim mollit non deserunt ullamco est sit <a href="#" title="" class="text-blue-600 transition-all duration-200 hover:underline">aliqua dolor</a> do amet sint. Velit officia consequat duis enim velit mollit.',
       open: false,
     },
     {
-      question: "How can I reach to support?",
+      question: 'How can I reach to support?',
       answer:
         'Amet minim mollit non deserunt ullamco est sit <a href="#" title="" class="text-blue-600 transition-all duration-200 hover:underline">aliqua dolor</a> do amet sint. Velit officia consequat duis enim velit mollit.',
       open: false,
@@ -66,13 +66,13 @@ export const Faqs = () => {
                 onClick={() => toggleFaq(index)}
               >
                 <span className="flex text-lg font-semibold text-black">
-                  {" "}
-                  {item.question}{" "}
+                  {' '}
+                  {item.question}{' '}
                 </span>
 
                 <svg
                   className={`w-6 h-6 text-gray-400 ${
-                    item.open ? "rotate-180" : ""
+                    item.open ? 'rotate-180' : ''
                   }`}
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -90,7 +90,7 @@ export const Faqs = () => {
 
               <div
                 className={`${
-                  item.open ? "block" : "hidden"
+                  item.open ? 'block' : 'hidden'
                 } px-4 pb-5 sm:px-6 sm:pb-6`}
               >
                 <p dangerouslySetInnerHTML={{ __html: item.answer }}></p>
@@ -100,7 +100,7 @@ export const Faqs = () => {
         </div>
 
         <p className="text-center text-gray-600 textbase mt-9">
-          Didn’t find the answer you are looking for?{" "}
+          Didn’t find the answer you are looking for?{' '}
           <a
             href="#"
             title=""

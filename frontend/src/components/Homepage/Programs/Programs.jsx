@@ -1,8 +1,7 @@
 import React from 'react';
-import { GrCheckboxSelected } from "react-icons/gr";
+import { GrCheckboxSelected } from 'react-icons/gr';
 import { programone } from '../../Assets/index';
-import { motion } from "framer-motion";
-
+import { motion } from 'framer-motion';
 
 export const Programs = () => {
   return (
@@ -44,9 +43,7 @@ export const Programs = () => {
               <div className="pl-10 pt-5 pb-10">
                 <div className="text-left">
                   <div className="my-3 text-gray-600">
-                    <div>
-                      1+ years of Work Experinence Required.
-                    </div>
+                    <div>1+ years of Work Experinence Required.</div>
                   </div>
                 </div>
                 <div className="font-bold text-left">Career Outcome</div>
@@ -169,4 +166,4 @@ export const Programs = () => {
       </div>
     </>
   );
-}
+};

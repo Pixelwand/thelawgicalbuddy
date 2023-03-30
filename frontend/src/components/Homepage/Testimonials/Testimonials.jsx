@@ -1,5 +1,5 @@
 import React from 'react';
-import {motion} from 'framer-motion'
+import { motion } from 'framer-motion';
 
 export const Testimonials = () => {
   return (
@@ -17,12 +17,13 @@ export const Testimonials = () => {
 
         <div className=" flex flex-col lg:flex-row justify-center gap-5 lg:gap-14 pb-10 pt-5  px-3">
           <motion.div
-           transition={{
+            transition={{
               duration: 0.8,
             }}
             whileHover={{ scale: 1.1, duration: 6 }}
             whileTap={{ scale: 0.9, duration: 2 }}
-            class=" bg-gradient-to-r from-astros to-chelesa text-white max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            class=" bg-gradient-to-r from-astros to-chelesa text-white max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+          >
             <a href="/">
               <div class="relative w-10 h-10 overflow-hidden rounded-full dark:bg-gray-600 ">
                 <svg
@@ -70,12 +71,13 @@ export const Testimonials = () => {
           </motion.div>
 
           <motion.div
-             transition={{
+            transition={{
               duration: 0.8,
             }}
             whileHover={{ scale: 1.1, duration: 6 }}
             whileTap={{ scale: 0.9, duration: 2 }}
-            class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+          >
             <a href="/">
               <div class="relative w-10 h-10 overflow-hidden bg-gray-100 rounded-full dark:bg-gray-600">
                 <svg
@@ -121,12 +123,13 @@ export const Testimonials = () => {
           </motion.div>
 
           <motion.div
-             transition={{
+            transition={{
               duration: 0.8,
             }}
             whileHover={{ scale: 1.1, duration: 6 }}
             whileTap={{ scale: 0.9, duration: 2 }}
-            class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+          >
             <a href="/">
               <div class="relative w-10 h-10 overflow-hidden bg-gray-100 rounded-full dark:bg-gray-600">
                 <svg
@@ -170,9 +173,8 @@ export const Testimonials = () => {
               </svg>
             </a>
           </motion.div>
-
-          </div>
+        </div>
       </div>
     </>
   );
-}
+};

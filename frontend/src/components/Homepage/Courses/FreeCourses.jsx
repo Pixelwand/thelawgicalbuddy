@@ -1,5 +1,10 @@
-import React, { useState } from "react";
-import { Featuredone, Featuredtwo, Featuredfourth, Featuredthree } from "../../Assets/index";
+import React, { useState } from 'react';
+import {
+  Featuredone,
+  Featuredtwo,
+  Featuredfourth,
+  Featuredthree,
+} from '../../Assets/index';
 
 export const FreeCourses = () => {
   return (
@@ -236,8 +241,8 @@ export const FreeCourses = () => {
                   $49.00
                 </p>
                 <del className="mt-0.5 text-xs sm:text-sm font-bold text-gray-500">
-                  {" "}
-                  $99.00{" "}
+                  {' '}
+                  $99.00{' '}
                 </del>
               </div>
             </div>
