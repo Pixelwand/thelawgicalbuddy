@@ -27,13 +27,15 @@ export const AuthTabs = () => {
   return (
     <>
       <div>
-        <Button onClick={openModal} bg="" ml={32} bgColor="blue.600">
+        <Button onClick={openModal} ml={132} className="text-white text-md px-4 py-1 rounded-sm outline outline-1 border border-white hover:scale-110 duration-75 hover:text-white ">
           Login
         </Button>
-        <Modal isOpen={modal} style={customStyles}>
+        <Modal isOpen={modal}
+        className="justify-center bg-white text-center mx-5 mt-10 py-3 rounded-2xl shadow-2xl z-10"
+        >
           <button
             onClick={closeModal}
-            className="float-right relative left-4 bottom-4"
+            className="float-right relative right-2 bottom-1"
           >
             <XMarkIcon
               className="block h-6 w-6 bg-white text-blue-800 text-end"

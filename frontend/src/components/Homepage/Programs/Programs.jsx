@@ -6,8 +6,8 @@ import { motion } from 'framer-motion';
 export const Programs = () => {
   return (
     <>
-      <div>
-        <div className="text-center text-2xl my-6 leading-10 ">
+      <div className='font-mono'>
+        <div className="text-center text-2xl my-6 leading-10">
           <b>Programs</b> we offer
         </div>
         <div className="flex flex-col lg:flex-row  lg:justify-center gap-5 text-center">
@@ -20,7 +20,7 @@ export const Programs = () => {
             className="shadow-2xl m-5 border-solid border rounded-2xl"
           >
             <div>
-              <div className="bg-gradient-to-r from-liberty via-intel to-blue-400 text-2xl text-white rounded-t-2xl py-4 flex flex-row gap-20 justify-center">
+              <div className="bg-gradient-to-r from-liberty via-intel font-mono to-blue-400 text-2xl text-white rounded-t-2xl py-4 flex flex-row gap-20 justify-center">
                 <div>Program 1</div>
                 <div>
                   <svg
@@ -40,10 +40,10 @@ export const Programs = () => {
                   {/* <img src={programone} alt="Program One" className='h-20 w-24 rounded-2xl'/> */}
                 </div>
               </div>
-              <div className="pl-10 pt-5 pb-10">
+              <div className="pl-10 pt-5 pb-10  font-mono">
                 <div className="text-left">
                   <div className="my-3 text-gray-600">
-                    <div>1+ years of Work Experinence Required.</div>
+                    <div className='font-mono'>1+ years of Work Experinence Required.</div>
                   </div>
                 </div>
                 <div className="font-bold text-left">Career Outcome</div>
