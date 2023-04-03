@@ -7,8 +7,8 @@ const client = new Client();
 
 
 client
-  .setEndpoint('http://localhost/v1') // Your API Endpoint
-  .setProject('6421c3411695f1eb0c3a'); // Your project ID
+  .setEndpoint('https://cloud.appwrite.io/v1') // Your API Endpoint
+  .setProject('642b1b7a10d1a74f5935'); // Your project ID
 
 
 export const getUserData = async () => {
