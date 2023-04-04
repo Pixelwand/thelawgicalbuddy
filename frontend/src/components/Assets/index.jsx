@@ -6,6 +6,7 @@ import Featuredone from '../Assets/Featuredone.png';
 import Featuredtwo from '../Assets/Featuredtwo.png';
 import Featuredthree from '../Assets/Featuredthree.png';
 import Featuredfourth from '../Assets/Featuredfourth.png';
+import course from '../Assets/course.jpg';
 
 export {
   Featuredone,
@@ -16,4 +17,5 @@ export {
   teacher,
   event,
   programone,
+  course
 };

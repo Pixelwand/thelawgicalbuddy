@@ -1,6 +1,6 @@
 import React from 'react';
 import { Pricing } from './Pricing/Pricing';
-
+import { course } from '../Assets/index';
 export const Topics = () => {
   return (
     <>
@@ -12,13 +12,15 @@ export const Topics = () => {
                 <div className="flex flex-row">
                   <div>Icon 1</div>
                   <div className="flex flex-col">
-                    <div>COURSES</div>
-                    <div>Free Courses by top scaler instructors.</div>
+                    <div className='hidden lg:flex'>COURSES</div>
+                    <div className='hidden lg:flex'>Free Courses by top scaler instructors.</div>
                   </div>
                 </div>
-                <div>View all courses</div>
+                <div className='hidden lg:flex'>View all courses</div>
               </div>
-              <div>Icon 2</div>
+              <div>
+                {/* <img src={course} alt="courseIcon" className='w-44 top-11 absolute ml-20 rounded-2xl'/> */}
+              </div>
             </div>
           </a>
         </div>
@@ -30,12 +32,12 @@ export const Topics = () => {
                   <div>Icon 1</div>
                   <div className="flex flex-col">
                     <div>COURSES</div>
-                    <div>Free Courses by top scaler instructors.</div>
+                    <div className='hidden lg:flex'>Free Courses by top scaler instructors.</div>
                   </div>
                 </div>
-                <div>View all courses</div>
+                <div className='hidden lg:flex'>View all courses</div>
               </div>
-              <div>Icon 2</div>
+              <div className='hidden lg:flex'>Icon 2</div>
             </div>
           </a>
         </div>

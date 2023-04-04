@@ -20,18 +20,18 @@ export const Events = () => {
             }}
             whileHover={{ scale: 1.1, duration: 6 }}
             whileTap={{ scale: 0.9, duration: 2 }}
-            class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+            class="bg-gradient-to-r from-blue-700 to-chelesa text-white max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
           >
             <a href="/">
               <img class="rounded-t-lg" src={event} alt="" />
             </a>
             <div class="p-5">
               <a href="/">
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight dark:text-white">
                   Noteworthy technology acquisitions 2021
                 </h5>
               </a>
-              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+              <p class="mb-3 font-normal dark:text-gray-400">
                 Here are the biggest enterprise technology acquisitions of 2021
                 so far, in reverse chronological order.
               </p>
@@ -49,18 +49,18 @@ export const Events = () => {
             }}
             whileHover={{ scale: 1.1, duration: 6 }}
             whileTap={{ scale: 0.9, duration: 2 }}
-            class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+            class="bg-gradient-to-r from-blue-700 to-chelesa text-white max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
           >
             <a href="/">
               <img class="rounded-t-lg" src={event} alt="" />
             </a>
             <div class="p-5">
               <a href="/">
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight dark:text-white">
                   Noteworthy technology acquisitions 2021
                 </h5>
               </a>
-              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+              <p class="mb-3 font-normal dark:text-gray-400">
                 Here are the biggest enterprise technology acquisitions of 2021
                 so far, in reverse chronological order.
               </p>
@@ -78,18 +78,18 @@ export const Events = () => {
             }}
             whileHover={{ scale: 1.1, duration: 6 }}
             whileTap={{ scale: 0.9, duration: 2 }}
-            class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+            class="bg-gradient-to-r from-blue-700 to-chelesa text-white max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
           >
             <a href="/">
               <img class="rounded-t-lg" src={event} alt="" />
             </a>
             <div class="p-5">
               <a href="/">
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight dark:text-white">
                   Noteworthy technology acquisitions 2021
                 </h5>
               </a>
-              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+              <p class="mb-3 font-normal dark:text-gray-400">
                 Here are the biggest enterprise technology acquisitions of 2021
                 so far, in reverse chronological order.
               </p>

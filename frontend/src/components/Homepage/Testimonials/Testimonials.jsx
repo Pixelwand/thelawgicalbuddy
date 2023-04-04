@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 export const Testimonials = () => {
   return (
     <>
-      <div className=" pt-3">
+      {/* <div className=" pt-3">
         <div className="text-2xl text-center font-bold mb-2 px-5">
           Discover and Connect with Alumni
         </div>
@@ -174,7 +174,7 @@ export const Testimonials = () => {
             </a>
           </motion.div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 };
