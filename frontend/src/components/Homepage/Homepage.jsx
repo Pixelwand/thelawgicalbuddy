@@ -19,7 +19,6 @@ export const Homepage = () => {
   return (
     <>
       <Navbar />
-      <SignupLists />
       <Main />
       <Programs />
       <Steps />

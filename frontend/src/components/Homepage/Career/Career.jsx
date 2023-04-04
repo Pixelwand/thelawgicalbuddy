@@ -19,7 +19,7 @@ export const Career = () => {
               You begin either as a Beginner, Intermediate, or Advanced learner
               based on your expertise.
             </p>
-            <div className="bg-white shadow-2xl p-4 rounded-2xl absolute mt-2 mx-auto mr-10 lg:w-80 ">
+            <div className="bg-white shadow-2xl p-4 rounded-2xl mt-2 lg:w-80 ml-1.5 ">
               <img
                 src={event}
                 alt="Structured Program"
@@ -38,7 +38,7 @@ export const Career = () => {
               Get senior industry experts as mentors to guide you with mock
               interviews, career advice, resume review, etc.
             </p>
-            <div className="bg-white shadow-2xl p-4 rounded-2xl absolute mt-2 mx-auto mr-10 lg:w-80">
+            <div className="bg-white shadow-2xl p-4 rounded-2xl ml-1.5 lg:w-80">
               <img
                 src={event}
                 alt="Structured Program"
@@ -58,7 +58,7 @@ export const Career = () => {
               referrals, career advice, life advice, or your future co-founder -
               all in one place.
             </p>
-            <div className="bg-white shadow-2xl p-4 rounded-2xl absolute mt-2 mx-auto mr-10 lg:w-80">
+            <div className="bg-white shadow-2xl p-4 rounded-2xl ml-1.5 lg:w-80">
               <img
                 src={event}
                 alt="Structured Program"

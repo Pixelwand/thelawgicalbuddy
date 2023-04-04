@@ -91,7 +91,7 @@ export const FreeCourses = () => {
 
               <div className="text-right">
                 <p className="text-xs font-bold text-gray-900 sm:text-sm md:text-base">
-                  $99.00
+                  ₹99
                 </p>
               </div>
             </div>
@@ -162,7 +162,7 @@ export const FreeCourses = () => {
 
               <div className="text-right">
                 <p className="text-xs font-bold text-gray-900 sm:text-sm md:text-base">
-                  $299.00
+                  ₹99
                 </p>
               </div>
             </div>
@@ -238,11 +238,11 @@ export const FreeCourses = () => {
 
               <div className="text-right">
                 <p className="text-xs font-bold text-gray-900 sm:text-sm md:text-base">
-                  $49.00
+                  ₹49
                 </p>
                 <del className="mt-0.5 text-xs sm:text-sm font-bold text-gray-500">
                   {' '}
-                  $99.00{' '}
+                  ₹99{' '}
                 </del>
               </div>
             </div>
@@ -313,7 +313,7 @@ export const FreeCourses = () => {
 
               <div className="text-right">
                 <p className="text-xs font-bold text-gray-900 sm:text-sm md:text-base">
-                  $79.00
+                  ₹79
                 </p>
               </div>
             </div>

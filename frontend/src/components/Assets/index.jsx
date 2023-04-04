@@ -7,8 +7,10 @@ import Featuredtwo from '../Assets/Featuredtwo.png';
 import Featuredthree from '../Assets/Featuredthree.png';
 import Featuredfourth from '../Assets/Featuredfourth.png';
 import course from '../Assets/course.jpg';
+import homepage from '../Assets/homepage.jpg';
 
 export {
+  homepage,
   Featuredone,
   Featuredtwo,
   Featuredthree,
