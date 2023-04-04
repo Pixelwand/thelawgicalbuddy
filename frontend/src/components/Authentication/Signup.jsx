@@ -32,7 +32,7 @@ export const Signup = () => {
        alert('Please more length password');
        return;
      }
-    register(email, password).then((account) =>
+    register(name, number, email, password).then((account) =>
       alert(`Successfully created account with ID: ${account.$id}`)
         .then(() => navigate("/"))
     );

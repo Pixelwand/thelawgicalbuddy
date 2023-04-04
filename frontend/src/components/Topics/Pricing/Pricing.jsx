@@ -25,7 +25,7 @@ export const Pricing = () => {
                     {' '}
                     Free{' '}
                   </span>
-                  <p className="mt-6 text-6xl font-bold">$0</p>
+                  <p className="mt-6 text-6xl font-bold">₹0</p>
                   <p className="mt-2 text-base font-normal text-gray-500">
                     Per month
                   </p>
@@ -36,7 +36,7 @@ export const Pricing = () => {
                     {' '}
                     Team{' '}
                   </span>
-                  <p className="mt-6 text-6xl font-bold">$99</p>
+                  <p className="mt-6 text-6xl font-bold">₹99</p>
                   <p className="mt-2 text-base font-normal text-gray-500">
                     Per month
                   </p>
@@ -47,7 +47,7 @@ export const Pricing = () => {
                     {' '}
                     Popular{' '}
                   </span>
-                  <p className="mt-6 text-6xl font-bold text-white">$150</p>
+                  <p className="mt-6 text-6xl font-bold text-white">₹150</p>
                   <p className="mt-2 text-base font-normal text-gray-200">
                     Per month
                   </p>
@@ -58,7 +58,7 @@ export const Pricing = () => {
                     {' '}
                     Enterprise{' '}
                   </span>
-                  <p className="mt-6 text-6xl font-bold">$490</p>
+                  <p className="mt-6 text-6xl font-bold">₹490</p>
                   <p className="mt-2 text-base font-normal text-gray-500">
                     Per month
                   </p>

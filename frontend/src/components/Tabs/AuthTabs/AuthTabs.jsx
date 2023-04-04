@@ -31,7 +31,7 @@ export const AuthTabs = () => {
           Login
         </Button>
         <Modal isOpen={modal}
-        className="justify-center bg-white text-center mx-5 mt-10 py-3 rounded-2xl shadow-2xl z-10"
+        className="justify-center bg-white text-center mt-10 py-3 rounded-2xl shadow-2xl z-10 lg:w-2/6 mx-5 lg:mx-auto"
         >
           <button
             onClick={closeModal}

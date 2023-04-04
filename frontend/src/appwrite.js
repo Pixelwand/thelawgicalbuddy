@@ -1,14 +1,10 @@
 import { Client, Account } from 'appwrite';
-import { redirect } from 'react-router-dom';
-const endPoint = process.env.APPWRITE_END_POINT;
-const projectId = process.env.APPWRITE_PROJECT_ID
-
 const client = new Client();
 
 
 client
   .setEndpoint('https://cloud.appwrite.io/v1') // Your API Endpoint
-  .setProject('642b1b7a10d1a74f5935'); // Your project ID
+  .setProject('642b27471ecadcae55cc'); // Your project ID
 
 
 export const getUserData = async () => {
@@ -41,10 +37,10 @@ export const logout = async () => {
   }
 }
 
-export const register = async (email, password) => {
+export const register = async (name, number, email, password) => {
   try {
     const account = new Account(client)
-    return account.create('unique()', email, password)
+    return account.create('unique()',name, number, email, password)
   } catch (error) {
     const appwriteError = error;
     throw new Error(appwriteError.message)
