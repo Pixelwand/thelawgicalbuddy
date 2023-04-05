@@ -3,8 +3,8 @@ const bodyParser = require('body-parser');
 const registerController = require('../../../controllers/users/authController')
 
 const app = express.Router();
-const urlEncodedBody = bodyParser.urlencoded({ extended: false });
+const urlEncodedParser = bodyParser.urlencoded({ extended: false });
 
-app.post('/register', urlEncodedBody, registerController.registerUser)
+app.post('/register', urlEncodedParser, registerController.registerUser)
 
 module.exports = app;

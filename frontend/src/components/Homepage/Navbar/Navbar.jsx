@@ -42,9 +42,9 @@ export const Navbar = () => {
                 </Disclosure.Button>
               </div>
               <div className="flex flex-1  sm:items-stretch sm:justify-start">
-                <div className="text-white font-bold font-logo text-xl ml-3 lg:text-2xl">
+                <a href='/' className="text-white font-bold font-logo text-xl ml-3 lg:text-2xl">
                   BICS
-                </div>
+                </a>
                 <div className="text-white sm:hidden">
                   <AuthTabs />
                 </div>

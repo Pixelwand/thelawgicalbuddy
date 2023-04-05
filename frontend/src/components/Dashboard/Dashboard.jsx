@@ -2,8 +2,6 @@ import { Fragment, useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Disclosure, Menu, Transition } from '@headlessui/react';
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline';
-import { getUserData, logout } from '../../appwrite';
-import { Models } from 'appwrite';
 
 
 const navigation = [
@@ -24,13 +22,7 @@ function classNames(...classes) {
 }
 
 export default function Dashboard() {
-  const navigate = useNavigate();
-  const [user, setUser] = useState();
-   useEffect(() => {
-     getUserData()
-       .then((account) => setUser(account))
-   }, []);
-  const handleLogout = ()=> logout().then(()=>navigate("/"))
+
 
   return (
     <>

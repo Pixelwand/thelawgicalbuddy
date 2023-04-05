@@ -5,12 +5,13 @@ exports.registerUser = async (req, res) => {
         const token = {email:req.body.email};
         const user = await User.findOne(token);
         if (user) {
+            console.log(user)
             res.status(400).json({
                 message:"User already exists"
             })
         }
         else {
-            User.create(req.body)
+           await User.create(req.body)
             console.log(req.body)
             res.status(201).json({
                 message: User,

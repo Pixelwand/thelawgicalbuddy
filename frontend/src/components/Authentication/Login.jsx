@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { login } from '../../appwrite';
+
 
 export const Login = () => {
   const navigate = useNavigate();
@@ -10,24 +10,11 @@ export const Login = () => {
 
   
 
-  const formSubmit = async (e) => {
-    e.preventDefault();
-    if (!email) {
-      alert("Please enter your email");
-      return;
-    }
-    if (!password) {
-      alert("Please enter your password");
-      return;
-    }
-    login(email, password).then((account) => { alert(`successfully logged in`) })
-    .finally(()=>navigate("/dashboard"))
-  };
-
+  
   return (
     <>
       <div class="p-2 pb-2">
-        <form onSubmit={formSubmit}>
+        <form >
           <fieldset class="text-center font-semibold text-base mb-8">
             Login with email
           </fieldset>
