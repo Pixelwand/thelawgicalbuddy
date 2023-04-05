@@ -37,10 +37,10 @@ export const logout = async () => {
   }
 }
 
-export const register = async (name, number, email, password) => {
+export const register = async (email, password) => {
   try {
     const account = new Account(client)
-    return account.create('unique()',name, number, email, password)
+    return account.create('unique()', email, password)
   } catch (error) {
     const appwriteError = error;
     throw new Error(appwriteError.message)

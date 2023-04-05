@@ -1,13 +1,14 @@
 // import { useForm } from 'react-hook-form';
 import React, { useState } from 'react';
+import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
-import { register } from '../../appwrite';
 
 export const Signup = () => {
     const [name, setName] = useState();
     const [number, setNumber] = useState();
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
+  
   const navigate = useNavigate();
   // const {
   //   register,
@@ -16,26 +17,18 @@ export const Signup = () => {
   // } = useForm();
 
   const formSubmit = async () => {
-     if (!name) {
-       alert('Please enter your name');
-       return;
-     }
-    if (!email) {
-      alert("Please enter your email");
-      return;
-    }
-    if (!number) {
-      alert('Please enter your number');
-      return;
-    }
-     if (password.ength<8) {
-       alert('Please more length password');
-       return;
-     }
-    register(name, number, email, password).then((account) =>
-      alert(`Successfully created account with ID: ${account.$id}`)
-        .then(() => navigate("/"))
-    );
+   await axios({
+     method: 'post',
+     url: 'http://localhost:8080/user/register',
+     data: {
+       name: setName,
+       email: setEmail,
+       number: setNumber,
+       password: setPassword,
+     },
+   }).then(() => {
+     console.log('User:');
+   });
   };
   return (
     <>
