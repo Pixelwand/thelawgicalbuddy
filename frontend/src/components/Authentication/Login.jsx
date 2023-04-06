@@ -7,14 +7,42 @@ export const Login = () => {
 
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
+  
+  async function loginUser(credentials) {
+    console.log(credentials)
+    return fetch('https://apply-remote-jobs.onrender.com/user/login', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(credentials)
+      
+    }
+    
+    )
+    
+      .then(data => data.json())
+      .then(navigate('/dashboard'))
+   }
+  
 
+const formSubmit = async e => {
+
+  e.preventDefault();
+  const token = await loginUser({
+    email,
+    password
+  });
+  console.log(token)
+
+}
   
 
   
   return (
     <>
       <div class="p-2 pb-2">
-        <form >
+        <form onSubmit={formSubmit}>
           <fieldset class="text-center font-semibold text-base mb-8">
             Login with email
           </fieldset>
@@ -53,3 +81,4 @@ export const Login = () => {
     </>
   );
 };
+

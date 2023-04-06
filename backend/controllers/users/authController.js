@@ -26,5 +26,21 @@ exports.registerUser = async (req, res) => {
 
 
 exports.loginUser = async (req, res) => {
-    
+    try{
+        const token = {email:req.body.email};
+        const user = await User.findOne(token);
+        if(!user){
+         res.status(404).json({
+            message:"User not found"
+         })
+        } else{
+            res.status(200).json({
+                message:"User logged in successfully"
+            })
+        }
+    } catch{
+        res.status(501).json({
+            message:"Internal Server error"
+        })
+    }
 }
