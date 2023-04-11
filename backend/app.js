@@ -40,6 +40,7 @@ app.use('/user', loginRoutes);
 app.use('/admin', adminRegisterRoutes);
 app.use('/admin', adminLoginRoutes);
 
+//courseRoutes middleware
 
 //Listening to port
 app.listen(port, () => {
