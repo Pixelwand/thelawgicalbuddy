@@ -12,6 +12,13 @@ const adminLoginRoutes = require('./routes/admin/auth/login');
 //Imported Users register and login routes
 const registerRoutes = require('./routes/users/auth/register');
 const loginRoutes = require('./routes/users/auth/login');
+
+//Imported Courses routes 
+const addCourseRoutes = require('./routes/admin/courses/addCourses');
+const getCourseRoutes = require('./routes/admin/courses/getCourses');
+const updateCourseRoutes = require('./routes/admin/courses/updateCourses');
+const deleteCourseRoutes = require('./routes/admin/courses/deleteCourses');
+
  
 //starting the server
 const app = express();
@@ -41,6 +48,10 @@ app.use('/admin', adminRegisterRoutes);
 app.use('/admin', adminLoginRoutes);
 
 //courseRoutes middleware
+app.use('/course', addCourseRoutes);
+app.use('/course', getCourseRoutes);
+app.use('/course', updateCourseRoutes);
+app.use('/course', deleteCourseRoutes);
 
 //Listening to port
 app.listen(port, () => {

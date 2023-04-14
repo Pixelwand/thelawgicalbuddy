@@ -26,7 +26,7 @@ export const Navbar = () => {
             <div className="relative flex h-16 items-center justify-between ">
               <div className="absolute inset-y-0 ml-80 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
-                <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2">
+                <Disclosure.Button className="inline-flex items-center justify-center rounded-md">
                   <span className="sr-only">Open main menu</span>
                   {open ? (
                     <XMarkIcon

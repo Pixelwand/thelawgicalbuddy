@@ -27,7 +27,7 @@ export const Pricing = () => {
                   </span>
                   <p className="mt-6 text-6xl font-bold">₹0</p>
                   <p className="mt-2 text-base font-normal text-gray-500">
-                    Per month
+                    Per course
                   </p>
                 </th>
 
@@ -38,7 +38,7 @@ export const Pricing = () => {
                   </span>
                   <p className="mt-6 text-6xl font-bold">₹99</p>
                   <p className="mt-2 text-base font-normal text-gray-500">
-                    Per month
+                    Per course
                   </p>
                 </th>
 
@@ -49,7 +49,7 @@ export const Pricing = () => {
                   </span>
                   <p className="mt-6 text-6xl font-bold text-white">₹150</p>
                   <p className="mt-2 text-base font-normal text-gray-200">
-                    Per month
+                    Per course
                   </p>
                 </th>
 
@@ -60,7 +60,7 @@ export const Pricing = () => {
                   </span>
                   <p className="mt-6 text-6xl font-bold">₹490</p>
                   <p className="mt-2 text-base font-normal text-gray-500">
-                    Per month
+                    Per course
                   </p>
                 </th>
               </tr>
@@ -369,7 +369,7 @@ export const Pricing = () => {
 
                 <td className="px-4 py-6 text-center">
                   <a
-                    href="#"
+                    href="/"
                     title=""
                     className="inline-flex items-center font-semibold text-blue-600 hover:text-blue-700"
                   >
@@ -391,7 +391,7 @@ export const Pricing = () => {
 
                 <td className="px-4 py-6 text-center">
                   <a
-                    href="#"
+                    href="/"
                     title=""
                     className="inline-flex items-center font-semibold text-blue-600 hover:text-blue-700"
                   >
@@ -413,7 +413,7 @@ export const Pricing = () => {
 
                 <td className="px-4 py-6 text-center text-white bg-yellow-500 rounded-b-xl">
                   <a
-                    href="#"
+                    href="/"
                     title=""
                     className="inline-flex items-center font-semibold text-white"
                   >
@@ -435,7 +435,7 @@ export const Pricing = () => {
 
                 <td className="px-4 py-6 text-center">
                   <a
-                    href="#"
+                    href="/"
                     title=""
                     className="inline-flex items-center font-semibold text-blue-600 hover:text-blue-700"
                   >
@@ -464,28 +464,28 @@ export const Pricing = () => {
         <div className="grid grid-cols-4 text-center divide-x divide-gray-200">
           <div className="px-2 py-2">
             <span className="text-sm font-medium text-blue-600"> Free </span>
-            <p className="mt-2 text-xl font-bold">$0</p>
+            <p className="mt-2 text-xl font-bold">₹0</p>
             <span className="mt-1 text-sm font-normal text-gray-500">
               {' '}
-              Per month{' '}
+              Per Course{' '}
             </span>
           </div>
 
           <div className="px-2 py-2">
             <span className="text-sm font-medium text-blue-600"> Team </span>
-            <p className="mt-2 text-xl font-bold">$99</p>
+            <p className="mt-2 text-xl font-bold">₹99</p>
             <span className="mt-1 text-sm font-normal text-gray-500">
               {' '}
-              Per month{' '}
+              Per course{' '}
             </span>
           </div>
 
           <div className="px-2 py-2">
             <span className="text-sm font-medium text-blue-600"> Popular </span>
-            <p className="mt-2 text-xl font-bold">$150</p>
+            <p className="mt-2 text-xl font-bold">₹150</p>
             <span className="mt-1 text-sm font-normal text-gray-500">
               {' '}
-              Per month{' '}
+              Per course{' '}
             </span>
           </div>
 
@@ -494,16 +494,16 @@ export const Pricing = () => {
               {' '}
               Enterprise{' '}
             </span>
-            <p className="mt-2 text-xl font-bold">$490</p>
+            <p className="mt-2 text-xl font-bold">₹490</p>
             <span className="mt-1 text-sm font-normal text-gray-500">
               {' '}
-              Per month{' '}
+              Per course{' '}
             </span>
           </div>
         </div>
 
         <div className="px-2 py-4 sm:px-4">
-          <p className="font-semibold">Website number</p>
+          <p className="font-semibold">Course</p>
         </div>
 
         <div className="grid grid-cols-4 text-center divide-x divide-gray-200">
@@ -513,7 +513,7 @@ export const Pricing = () => {
 
           <div className="px-2 py-2">100</div>
 
-          <div className="px-2 py-2">Unlimited</div>
+          <div className="px-2 py-2">Course</div>
         </div>
 
         <div className="px-2 py-4 sm:px-4">
@@ -531,7 +531,7 @@ export const Pricing = () => {
         </div>
 
         <div className="px-2 py-4 sm:px-4">
-          <p className="font-semibold">Database</p>
+          <p className="font-semibold">Course</p>
         </div>
 
         <div className="grid grid-cols-4 text-center divide-x divide-gray-200">
@@ -545,7 +545,7 @@ export const Pricing = () => {
         </div>
 
         <div className="px-2 py-4 sm:px-4">
-          <p className="font-semibold">Unmetered bandwidth</p>
+          <p className="font-semibold">Course</p>
         </div>
 
         <div className="grid grid-cols-4 text-center divide-x divide-gray-200">
@@ -598,7 +598,7 @@ export const Pricing = () => {
         </div>
 
         <div className="px-2 py-4 sm:px-4">
-          <p className="font-semibold">SSD Disk</p>
+          <p className="font-semibold">Course</p>
         </div>
 
         <div className="grid grid-cols-4 text-center divide-x divide-gray-200">
@@ -651,7 +651,7 @@ export const Pricing = () => {
         </div>
 
         <div className="px-2 py-4 sm:px-4">
-          <p className="font-semibold">VCPUS Fontworld</p>
+          <p className="font-semibold">Course</p>
         </div>
 
         <div className="grid grid-cols-4 text-center divide-x divide-gray-200">
@@ -704,7 +704,7 @@ export const Pricing = () => {
         </div>
 
         <div className="px-2 py-4 sm:px-4">
-          <p className="font-semibold">WordPress install</p>
+          <p className="font-semibold">Course</p>
         </div>
 
         <div className="grid grid-cols-4 text-center divide-x divide-gray-200">
@@ -759,13 +759,13 @@ export const Pricing = () => {
         <div className="grid grid-cols-4 text-center divide-x divide-gray-200">
           <div className="px-1 py-2 sm:px-4">
             <span className="text-sm font-medium text-blue-600"> Free </span>
-            <p className="mt-2 text-xl font-bold">$0</p>
+            <p className="mt-2 text-xl font-bold">₹0</p>
             <span className="mt-1 text-sm font-normal text-gray-500">
               {' '}
-              Per month{' '}
+              Per course{' '}
             </span>
             <a
-              href="#"
+              href="/"
               title=""
               className="flex items-center justify-center w-full px-1 py-2 mt-5 text-sm text-white transition-all duration-200 bg-blue-600 border border-transparent rounded-md hover:bg-blue-700"
               role="button"
@@ -777,13 +777,13 @@ export const Pricing = () => {
 
           <div className="px-1 py-2 sm:px-4">
             <span className="text-sm font-medium text-blue-600"> Team </span>
-            <p className="mt-2 text-xl font-bold">$99</p>
+            <p className="mt-2 text-xl font-bold">₹99</p>
             <span className="mt-1 text-sm font-normal text-gray-500">
               {' '}
-              Per month{' '}
+              Per course{' '}
             </span>
             <a
-              href="#"
+              href="/"
               title=""
               className="flex items-center justify-center w-full px-1 py-2 mt-5 text-sm text-white transition-all duration-200 bg-blue-600 border border-transparent rounded-md hover:bg-blue-700"
               role="button"
@@ -795,13 +795,13 @@ export const Pricing = () => {
 
           <div className="px-1 py-2 sm:px-4">
             <span className="text-sm font-medium text-blue-600"> Popular </span>
-            <p className="mt-2 text-xl font-bold">$150</p>
+            <p className="mt-2 text-xl font-bold">₹150</p>
             <span className="mt-1 text-sm font-normal text-gray-500">
               {' '}
-              Per month{' '}
+              Per course{' '}
             </span>
             <a
-              href="#"
+              href="/"
               title=""
               className="flex items-center justify-center w-full px-1 py-2 mt-5 text-sm text-white transition-all duration-200 bg-blue-600 border border-transparent rounded-md hover:bg-blue-700"
               role="button"
@@ -816,13 +816,13 @@ export const Pricing = () => {
               {' '}
               Enterprise{' '}
             </span>
-            <p className="mt-2 text-xl font-bold">$490</p>
+            <p className="mt-2 text-xl font-bold">₹490</p>
             <span className="mt-1 text-sm font-normal text-gray-500">
               {' '}
-              Per month{' '}
+              Per course{' '}
             </span>
             <a
-              href="#"
+              href="/"
               title=""
               className="flex items-center justify-center w-full px-1 py-2 mt-5 text-sm text-white transition-all duration-200 bg-blue-600 border border-transparent rounded-md hover:bg-blue-700"
               role="button"
