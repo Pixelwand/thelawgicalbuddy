@@ -21,7 +21,21 @@ exports.addCourse = async (req, res) => {
 
 
 exports.getCourse = async (req, res) => {
-    
+    try {
+        const course = await Courses.find();
+        res.status(200).json({
+            status: 'success',
+            message: 'Data fetched successfully',
+            data: {
+                course
+            }
+        })
+    } catch(err) {
+        res.status(501).json({
+            status: 'failed',
+            message:'Internal server error'
+                })
+            }
 }
 
 

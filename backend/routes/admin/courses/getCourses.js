@@ -3,6 +3,6 @@ const getCourseController = require('../../../controllers/admin/courses/coursesC
 
 const app = express.Router();
 
-app.get('/', getCourseController.addCourse);
+app.get('/get', getCourseController.getCourse);
 
 module.exports = app;
