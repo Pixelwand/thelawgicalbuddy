@@ -38,17 +38,10 @@ exports.getCourse = async (req, res) => {
             }
 }
 
-
 exports.updateCourse = async (req, res) => {
     try {
-    
-    } catch(err) {
-        res.status(501).json({
-            status: 'failed',
-            message:'Internal server error'
-        })
-}
-}
+        const { id } = req.params;
+        const course = 
 
 exports.deleteCourse = async (req, res) => {
     

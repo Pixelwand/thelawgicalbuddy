@@ -31,11 +31,11 @@ const courseSchema = new mongoose.Schema({
         required: true,
         trim:true
     },
-    isFree: {
-        type: Boolean,
-        required: true,
-        trim:true
-    }
+    // isFree: {
+    //     type: Boolean,
+    //     required: true,
+    //     trim:true
+    // }
     
 })
 

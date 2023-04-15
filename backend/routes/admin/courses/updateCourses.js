@@ -8,6 +8,6 @@ const urlEncodedParser = bodyParser.urlencoded({ extended: false });
 const app = express.Router();
 
 
-app.post('/update', updateCourseController.updateCourse);
+app.patch('/:id', updateCourseController.updateCourse);
 
-module.exports = app;
+module.exports = app; 
