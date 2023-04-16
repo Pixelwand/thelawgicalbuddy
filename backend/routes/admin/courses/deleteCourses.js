@@ -4,6 +4,6 @@ const deleteCourseController = require('../../../controllers/admin/courses/cours
 
 const app = express.Router();
 
-app.delete('/', deleteCourseController.deleteCourse);
+app.delete('/delete/:id', deleteCourseController.deleteCourse);
 
 module.exports = app;

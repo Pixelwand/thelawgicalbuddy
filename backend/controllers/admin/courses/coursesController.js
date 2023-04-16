@@ -71,7 +71,14 @@ exports.updateCourse = async (req, res) => {
 
 exports.deleteCourse = async (req, res) => {
     try {
-        
+        const course = await Courses.findByIdAndDelete(req.params.id);
+        res.status(200).json({
+            status: 'success',
+            message: 'Course deleted successfully',
+            data: {
+                course
+            }
+        })
     } catch (err) {
         res.status(501).json({
             status: 'failed',
