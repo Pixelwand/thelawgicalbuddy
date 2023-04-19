@@ -29,7 +29,7 @@ const deleteBlogRoutes = require('./routes/admin/blog/deleteBlog');
 const userProfileRoutes = require('./routes/admin/users/userProfile');
  
 //starting the server
-const app = express();
+const app = express(); 
 const port = process.env.PORT || 8080;
 const db = process.env.DB;
 console.log(port);
