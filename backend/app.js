@@ -19,6 +19,14 @@ const getCourseRoutes = require('./routes/admin/courses/getCourses');
 const updateCourseRoutes = require('./routes/admin/courses/updateCourses');
 const deleteCourseRoutes = require('./routes/admin/courses/deleteCourses');
 
+//Imported blog routes
+const addBlogRoutes = require('./routes/admin/blog/addBlog');
+const getBlogRoutes = require('./routes/admin/blog/getBlog');
+const updateBlogRoutes = require('./routes/admin/blog/updateBlog');
+const deleteBlogRoutes = require('./routes/admin/blog/deleteBlog');
+
+//Importing user profile routes
+const userProfileRoutes = require('./routes/admin/users/userProfile');
  
 //starting the server
 const app = express();
@@ -52,6 +60,15 @@ app.use('/course', addCourseRoutes);
 app.use('/course', getCourseRoutes);
 app.use('/course', updateCourseRoutes);
 app.use('/course', deleteCourseRoutes);
+
+//blogRoutes middleware
+app.use('/blog', addBlogRoutes);
+app.use('/blog', getBlogRoutes);
+app.use('/blog', updateBlogRoutes);
+app.use('/blog', deleteBlogRoutes);
+
+//userProfileRoutes middleware
+app.use('/user', userProfileRoutes)
 
 //Listening to port
 app.listen(port, () => {
